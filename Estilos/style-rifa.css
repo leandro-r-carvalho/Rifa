@@ -1,0 +1,129 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    width: 600px;
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(163, 195, 231);
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.infoRifa {
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:baseline;
+    padding: 5px;
+    margin: auto;
+}
+
+.infoRifa p {
+    width: 180px;
+    padding: 2px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.infoRifa input {
+    width: 70px;
+    height: 25px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.infoRifa select {
+    width: 40px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.btn-gera-numeros, .btn-gera-sorteio {
+    margin: auto;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    background-color:darkblue;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color:grey;
+    color: darkblue;
+    transform: scale(1.1);
+}
+
+.numerosRifa {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    width: 500px;
+    height: 500px;
+    border: 5px double #000;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.numerosRifa .num {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.numerosRifa #numPar {
+    background-color: darkblue;
+}
+
+.numerosRifa #numImpar {
+    background-color: #2AB0E0;
+}
+
+.resultado {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding: 5px;
+    margin: auto;
+}
+
+.resultado .num1,
+.resultado .num2,
+.resultado .num3 {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.num1, .num2, .num3 {
+    display: none;
+}
